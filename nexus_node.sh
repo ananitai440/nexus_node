@@ -9,6 +9,7 @@ sudo apt install -y protobuf-compiler
 # Install Rust
 echo "Installing Rust..."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt install screen -y
 source $HOME/.cargo/env
 export PATH="$HOME/.cargo/bin:$PATH"
 
