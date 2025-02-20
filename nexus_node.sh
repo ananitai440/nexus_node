@@ -9,12 +9,12 @@ sudo apt install -y protobuf-compiler
 # Install Rust
 echo "Installing Rust..."
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-sudo apt install screen -y
+#sudo apt install screen -y
 source $HOME/.cargo/env
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Start a screen session for Nexus node
-screen -S nexus -d -m bash -c "echo 'Nexus Node is running...'; exec bash"
+#screen -S nexus -d -m bash -c "echo 'Nexus Node is running...'; exec bash"
 
 # Install Nexus CLI
 curl https://cli.nexus.xyz/ | sh
