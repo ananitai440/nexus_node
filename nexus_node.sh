@@ -17,7 +17,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 #screen -S nexus -d -m bash -c "echo 'Nexus Node is running...'; exec bash"
 
 # Install Nexus CLI
-curl https://cli.nexus.xyz/ | sh
+sudo apt update && sudo apt install -y build-essential libssl-dev pkg-config zlib1g-dev && RUST_BACKTRACE=1 curl https://cli.nexus.xyz/ | sh
 
 echo "Nexus Node setup complete."
 
